@@ -4,24 +4,24 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_QWERTY] = LAYOUT_kc(
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
-     TAB , Q  , W  , E  , R  , T  ,                Y  , U  , I  , O  , P  ,EQL ,
+     ESCC , Q  , W  , E  , R  , T  ,                Y  , U  , I  , O  , P  ,BSPC ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
      ESCC, A  , S  , D  , F  , G  ,                H  , J  , K  , L  ,SCLN,QUOT,
   //|----+----+----+----+----+----+              |----+----+----+----+----+----|
-     LSFT, Z  , X  , C  , V  , B  ,                N  , M  ,COMM,DOT ,SLSH,ENTS,
+     LSFT, Z  , X  , C  , V  , B  ,                N  , M  ,COMM,DOT ,SLSH,RSFT,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
-                       LALT,LGUI,SPC ,         BSPC,CODE,FN
+                       LALT,LGUI,SPC ,         ENTS,CODE,FN
   //                  `----+----+----'        `+---+----+----'c
   ),
   [_CODE] = LAYOUT_kc(
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
-     GRV ,EXLM, AT ,HASH, DLR,PERC,               CIRC,LPLT,ASTR,RPGT,NEQL,    ,
+     GRV ,EXLM, AT ,HASH, DLR,PERC,               CIRC,LPLT,ASTR,RPGT,NEQL, EQL ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
          , 1  , 2  , 3  , 4  , 5  ,               MINS,LBRC, UP ,RBRC,    ,BSLS,
   //|----+----+----+----+----+----+              |----+----+----+----+----+----|
-         , 6  , 7  , 8  , 9  , 0  ,               AMPR,LEFT,DOWN,RGHT,    ,PIPE,
+         , 6  , 7  , 8  , 9  , 0  ,               AMPR,LEFT,DOWN,RGHT,    ,RSFT,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
-                           ,    ,DOT ,             ,    ,
+                           ,    ,TAB ,             ,    ,
   //                  `----+----+----'        `----+----+----'
   ),
   [_FN] = LAYOUT_kc(
@@ -32,7 +32,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----+              |----+----+----+----+----+----|
      LMOD,LHUD,LSAD,LVAD,RST ,BRMD,               VOLD,CTRA,PGDN,CTRE,    ,    ,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
-                           ,    ,    ,         MUTE,    ,     
+                           ,    ,    ,         MUTE,    ,
   //                  `----+----+----'        `----+----+----'
   ),
 };
